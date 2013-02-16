@@ -44,7 +44,7 @@ while read i ;
         sleep 1
                 dtstart=$(date +"%Y-%m-%dT%H:%M:%SZ") ;
                 dtstartd=$(echo "$dtstart" | sed 's/[^0-9]*//g') ;
-#        wget -t 0 --no-http-keep-alive "http://stats.oecd.org/restsdmx/sdmx.ashx/Get$Get/$DataSetCode" -O ../data/"$DataSetCode".xml
+#        wget -c -t 0 --no-http-keep-alive "http://stats.oecd.org/restsdmx/sdmx.ashx/Get$Get/$DataSetCode" -O "$data""$DataSetCode".xml
         sleep 1
                 dtend=$(date +"%Y-%m-%dT%H:%M:%SZ") ;
                 dtendd=$(echo "$dtend" | sed 's/[^0-9]*//g') ;
