@@ -7,10 +7,7 @@
 
 . $HOME/lodstats-env/bin/activate
 
-data="/data/oecd-linked-data/data/";
-namespace="http://oecd.270a.info/";
-tdbAssembler="/usr/lib/fuseki/tdb.oecd.ttl";
-JVM_ARGS="-Xmx12000M"
+. ./oecd.config.sh
 #cd "$data"import
 #rm *stats*
 
@@ -20,14 +17,14 @@ JVM_ARGS="-Xmx12000M"
 #19:47
 #05:27
 
-echo Exporting "$data"import/meta.nt ;
+echo Exporting "$namespace"graph/meta ;
 java "$JVM_ARGS" tdb.tdbquery --time --desc="$tdbAssembler" --results=n-triples 'CONSTRUCT { ?s ?p ?o } WHERE { GRAPH <'"$namespace"'graph/meta> { ?s ?p ?o } }' > "$data"import/meta.nt ;
 
-echo Creating "$data"import/meta.nt.stats.ttl ;
+echo Creating LODStats "$data"import/meta.nt.stats.ttl ;
 lodstats -val "$data"import/meta.nt > "$data"import/meta.nt.stats.ttl ;
 
 echo "Fixing URI for meta stats" ;
-find "$data"import/*stats.ttl -name "*[!Structure|prov]" | while read i ; do sed -ri 's/<file:\/\/\/data\/oecd-linked-data\/data\/import\/([^\.]*)\.nt/<http:\/\/oecd.270a.info\/dataset\/\1/g' "$i" ; done ;
+find "$data"import/*stats.ttl -name "*[!Structure|oecd.]" | while read i ; do sed -ri 's/<file:\/\/\/data\/oecd-linked-data\/data\/import\/([^\.]*)\.nt/<http:\/\/oecd.270a.info\/dataset\/\1/g' "$i" ; done ;
 
 
 

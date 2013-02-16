@@ -5,12 +5,8 @@
 #    Author URI: http://csarven.ca/#i
 #
 
-data="/data/oecd-linked-data/data/";
-namespace="http://oecd.270a.info/";
-db="/SSD/data/tdb/db/oecd/";
-tdbAssembler="/usr/lib/fuseki/tdb.oecd.ttl";
-JVM_ARGS="-Xmx12000M"
-#exit;
+. ./oecd.config.sh
+exit;
 echo "Removing $db";
 rm -rf "$db";
 
@@ -27,7 +23,9 @@ ls -1S "$data"import/*.nt | grep -vE "(Structure|prov).nt" | while read i ; do f
 
 
 for i in "$data"import/*.Structure.nt ; do java "$JVM_ARGS" tdb.tdbloader --desc="$tdbAssembler" --graph="$namespace"graph/meta "$i" ; done
-java "$JVM_ARGS" tdb.tdbloader --desc="$tdbAssembler" --graph="$namespace"graph/meta "$data"prov.rdf
+java "$JVM_ARGS" tdb.tdbloader --desc="$tdbAssembler" --graph="$namespace"graph/meta "$data"oecd.prov.archive.nt
+java "$JVM_ARGS" tdb.tdbloader --desc="$tdbAssembler" --graph="$namespace"graph/meta "$data"oecd.prov.retrieval.rdf
+
 
 #tail -n 266259 oecd.cl_location.nt > o.nt && sort -u o.nt > /data/oecd-linked-data/data/oecd.cl_location.nt
 #rapper -g oecd-worldbank.country.trigrams.accept.nt > /data/oecd-linked-data/data/oecd.exactMatch.worldbank.nt

@@ -5,7 +5,7 @@
 #    Author URI: http://csarven.ca/#i
 #
 
-data="/data/oecd-linked-data/data/";
+. ./oecd.config.sh
 
 rm "$data"import/*.nt ;
 
@@ -17,9 +17,10 @@ rm "$data"import/*.nt ;
 
 #ls -1 "$data"*.rdf | grep -v Structure | while read i ; do rapper -g "$i" >> "$data"import/graph.data.nt ; done
 
-find "$data" -name "*[!Structure|prov].rdf" | while read i ; do file=$(basename "$i"); dataSetCode=${file%.*};
-    rapper -g "$i" > "$data"import/"$dataSetCode".nt
-    done;
+#find "$data" -name "*[!Structure|prov].rdf" | while read i ; do file=$(basename "$i"); dataSetCode=${file%.*};
+for i in "$data"*.rdf do file=$(basename "$i"); dataSetCode=${file%.*}; rapper -g "$i" > "$data"import/"$dataSetCode".nt ; done;
+
+
 
 #real    65m8.998s
 #user    61m52.876s
