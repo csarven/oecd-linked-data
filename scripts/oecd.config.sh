@@ -6,15 +6,14 @@
 #
 
 agency="oecd";
-data="/data/$agency-linked-data/data/";
-namespace="http://$agency.270a.info/";
 state=".staging"; #or ''
+data="/data/$agency-linked-data/data$state/";
+namespace="http://$agency.270a.info/";
 db="/SSD/data/tdb/db/$agency$state/";
 tdbAssembler="/usr/lib/fuseki/tdb.$agency$state.ttl";
-tdbAssemblerStaging="/usr/lib/fuseki/tdb.$agency.staging.ttl";
 JVM_ARGS="-Xmx12000M"
 javatdbloader="java $JVM_ARGS tdb.tdbloader --desc=$tdbAssembler";
-void="/var/www/$agency.270a.info/void.ttl";
+void="/var/www/$agency.270a.info/void$state.ttl";
 voidInit="$agency.void.init.ttl";
 graphs="/home/sarcap/Graphs/";
 

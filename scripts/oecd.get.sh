@@ -41,11 +41,11 @@ while read i ;
                     DataTypeLabel="Structure"
                     DataTypePath=".Structure"
                 fi
-        sleep 1
+#        sleep 1
                 dtstart=$(date +"%Y-%m-%dT%H:%M:%SZ") ;
                 dtstartd=$(echo "$dtstart" | sed 's/[^0-9]*//g') ;
-#        wget -c -t 0 --no-http-keep-alive "http://stats.oecd.org/restsdmx/sdmx.ashx/Get$Get/$DataSetCode" -O "$data""$DataSetCode".xml
-        sleep 1
+        wget -c -t 1 --no-http-keep-alive "http://stats.oecd.org/restsdmx/sdmx.ashx/Get$GD/$DataSetCode" -O "$data""$DataSetCode""$DataTypePath".xml
+#        sleep 1
                 dtend=$(date +"%Y-%m-%dT%H:%M:%SZ") ;
                 dtendd=$(echo "$dtend" | sed 's/[^0-9]*//g') ;
 
@@ -74,7 +74,7 @@ while read i ;
 
 echo -e "\n</rdf:RDF>" >> "$data"prov.retrieval.rdf ;
 
-mv "$data"/oecd.temp /tmp/
+mv "$data"oecd.temp /tmp/
 
 #wget "http://stats.oecd.org/restsdmx/sdmx.ashx/GetData/$DataSetCode"
 #wget "http://stats.oecd.org/restsdmx/sdmx.ashx/GetDataStructure/"$DataSetCode"
