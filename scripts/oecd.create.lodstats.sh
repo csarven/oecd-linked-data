@@ -8,6 +8,8 @@
 . $HOME/lodstats-env/bin/activate
 
 . ./oecd.config.sh
+
+mkdir -p "$data"import
 #cd "$data"import
 #rm *stats*
 
@@ -24,7 +26,7 @@ echo Creating LODStats "$data"import/meta.nt.stats.ttl ;
 lodstats -val "$data"import/meta.nt > "$data"import/meta.nt.stats.ttl ;
 
 echo "Fixing URI for meta stats" ;
-find "$data"import/*stats.ttl -name "*[!Structure|oecd.]" | while read i ; do sed -ri 's/<file:\/\/\/data\/oecd-linked-data\/data\/import\/([^\.]*)\.nt/<http:\/\/oecd.270a.info\/dataset\/\1/g' "$i" ; done ;
+find "$data"import/*stats.ttl -name "*[!Structure|oecd.]" | while read i ; do sed -ri 's/<file:\/\/\/data\/'"$agency"'-linked-data\/data\/import\/([^\.]*)\.nt/<http:\/\/'"$agency"'.270a.info\/dataset\/\1/g' "$i" ; done ;
 
 
 

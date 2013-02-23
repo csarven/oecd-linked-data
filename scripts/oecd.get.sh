@@ -7,7 +7,7 @@
 
 . ./oecd.config.sh
 
-rm "$data"prov.retrieval.rdf
+rm "$data""$agency".prov.retrieval.rdf
 
 echo '<?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
@@ -16,7 +16,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
     xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:prov="http://www.w3.org/ns/prov#"
     xmlns:foaf="http://xmlns.com/foaf/0.1/"
-    xmlns:sdmx="http://purl.org/linked-data/sdmx#">' > "$data"prov.retrieval.rdf ;
+    xmlns:sdmx="http://purl.org/linked-data/sdmx#">' > "$data""$agency".prov.retrieval.rdf ;
 
 xmllint --xpath "/ul/li/ul/li/ul/li/a[@class = \"ds\"]" oecd.html | sed 's/\/a>/\/a>\n/gi' > oecd.temp
 
@@ -67,12 +67,12 @@ while read i ;
                     <prov:generated rdf:resource="http:\/\/oecd.270a.info\/data\/'$DataSetCode''$DataTypePath'.xml"\/>
                     <rdfs:label xml:lang="en">Retrieved '$DataSetCode' '$DataTypeLabel'<\/rdfs:label>
                     <rdfs:comment xml:lang="en">'$DataTypeLabel' of dataset '$DataSetCode' retrieved from source and saved to local filesystem.<\/rdfs:comment>
-                <\/rdf:Description>/' >> "$data"prov.retrieval.rdf ;
+                <\/rdf:Description>/' >> "$data""$agency".prov.retrieval.rdf ;
             done
         (( counter++ ));
     done < oecd.temp
 
-echo -e "\n</rdf:RDF>" >> "$data"prov.retrieval.rdf ;
+echo -e "\n</rdf:RDF>" >> "$data""$agency".prov.retrieval.rdf ;
 
 mv "$data"oecd.temp /tmp/
 
