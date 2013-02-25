@@ -41,7 +41,7 @@ oecd-dataset:oecd
     void:subset
         oecd-dataset:void ,
         ?voidDataset ;
-    void:triples 225178954 ;
+    void:triples 225215088 ;
     dcterms:subject
         <http://dbpedia.org/resource/Statistical_survey> ,
         <http://dbpedia.org/resource/Finance> ,
@@ -58,7 +58,7 @@ oecd-dataset:oecd
 oecd-dataset:void
     a sd:Graph, void:Dataset ;
     dcterms:title "SD+VoID triples"@en ;
-    void:triples 5331 ;
+    void:triples 23868 ;
     void:dataDump <http://oecd.270a.info/void.ttl> ;
     .
 
@@ -88,7 +88,7 @@ oecd-dataset:meta
     a sd:Dataset ;
     dcterms:title "OECD Linked Data"@en ;
     dcterms:description "OECD Linked Data"@en ;
-    void:triples 225178954 ;
+    void:triples 225215088 ;
 
     sd:defaultGraph :defaultGraph ;
 
@@ -101,7 +101,7 @@ oecd-dataset:meta
     a sd:Graph, void:Dataset ;
     dcterms:title "OECD Linked Data SPARQL Endpoint Description"@en ;
     dcterms:description "Contains a copy of this SD+VoID file!"@en ;
-    void:triples 225120000 ;
+    void:triples 225215088 ;
     .
 :namedGraphVoID
     sd:name oecd-graph:void ;
@@ -148,13 +148,6 @@ oecd-dataset:meta
     void:subjectsTarget :meta ;
     void:objectsTarget :dbpedia ;
     void:triples 3391 ;
-    .
-:meta_dbpedia
-    a void:Linkset ;
-    void:linkPredicate skos:closeMatch ;
-    void:subjectsTarget :meta ;
-    void:objectsTarget :dbpedia ;
-    void:triples 314 ;
     .
 :dbpedia
     rdf:type void:Dataset ;
