@@ -6,7 +6,7 @@
 #
 
 . ./oecd.config.sh
-exit;
+#exit;
 echo "Removing $db";
 rm -rf "$db";
 
@@ -47,6 +47,9 @@ java "$JVM_ARGS" tdb.tdbloader --desc="$tdbAssembler" --graph="$namespace"graph/
 java "$JVM_ARGS" tdb.tdbloader --desc="$tdbAssembler" --graph="$namespace"graph/meta "$data"oecd.exactMatch.transparency.nt
 java "$JVM_ARGS" tdb.tdbloader --desc="$tdbAssembler" --graph="$namespace"graph/meta "$data"oecd.exactMatch.dbpedia.nt
 java "$JVM_ARGS" tdb.tdbloader --desc="$tdbAssembler" --graph="$namespace"graph/meta "$data"oecd.exactMatch.bfs.nt
+java "$JVM_ARGS" tdb.tdbloader --desc="$tdbAssembler" --graph="$namespace"graph/meta "$data"oecd.exactMatch.fao.nt
+java "$JVM_ARGS" tdb.tdbloader --desc="$tdbAssembler" --graph="$namespace"graph/meta "$data"oecd.exactMatch.ecb.nt
+java "$JVM_ARGS" tdb.tdbloader --desc="$tdbAssembler" --graph="$namespace"graph/meta "$data"oecd.property.meta.nt
 
 
 #real    146m42.351s

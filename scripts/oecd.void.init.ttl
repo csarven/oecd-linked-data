@@ -11,9 +11,13 @@ prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#>
 prefix prov: <http://www.w3.org/ns/prov#>
 prefix sd: <http://www.w3.org/ns/sparql-service-description#>
 prefix : <http://oecd.270a.info/void.ttl#>
-prefix oecd-dataset: <http://oecd.270a.info/dataset/>
 prefix oecd-graph: <http://oecd.270a.info/graph/>
-
+prefix oecd-dataset: <http://oecd.270a.info/dataset/>
+prefix bfs-dataset: <http://bfs.270a.info/dataset/>
+prefix fao-dataset: <http://fao.270a.info/dataset/>
+prefix ecb-dataset: <http://ecb.270a.info/dataset/>
+prefix worldbank-dataset: <http://worldbank.270a.info/dataset/>
+prefix transparency-dataset: <http://transparency.270a.info/dataset/>
 
 CONSTRUCT {
 <http://csarven.ca/#i>
@@ -28,11 +32,12 @@ CONSTRUCT {
     a void:DatasetDescription ;
     dcterms:title "A VoiD Description of the oecd.270a.info Dataset"@en ;
     dcterms:creator <http://csarven.ca/#i> ;
-    foaf:primaryTopic :oecd .
+    foaf:primaryTopic oecd-dataset:oecd .
 
 
 oecd-dataset:oecd
     a void:Dataset ;
+    dcterms:title "Organisation for Economic Co-operation and Development datasets"@en ;
     foaf:homepage <http://oecd.270a.info/> ;
     dcterms:source <http://oecd.org/> ;
     dcterms:publisher <http://csarven.ca/#i> ;
@@ -62,9 +67,6 @@ oecd-dataset:void
     void:dataDump <http://oecd.270a.info/void.ttl> ;
     .
 
-oecd-dataset:meta
-    void:dataDump <http://oecd.270a.info/data/meta.tar.gz> ;
-    .
 
 ?voidDataset
     a sd:Graph ;
@@ -109,48 +111,76 @@ oecd-dataset:meta
     .
 
 
-:meta_worldbank
+:linkset-oecd-worldbank
     a void:Linkset ;
     void:linkPredicate skos:exactMatch ;
-    void:subjectsTarget :meta ;
-    void:objectsTarget :worldbank ;
+    void:subjectsTarget oecd-dataset:oecd ;
+    void:objectsTarget worldbank-dataset:worldbank ;
     void:triples 3487 ;
     .
-:worldbank
-    rdf:type void:Dataset ;
+worldbank-dataset:worldbank
+    a void:Dataset ;
+    void:sparqlEndpoint <http://worldbank.270a.info/sparql> ;
     foaf:homepage <http://worldbank.270a.info/> ;
     .
-:meta_transparency
+:linkset-oecd-transparency
     a void:Linkset ;
     void:linkPredicate skos:exactMatch ;
-    void:subjectsTarget :meta ;
-    void:objectsTarget :worldbank ;
+    void:subjectsTarget oecd-dataset:oecd ;
+    void:objectsTarget transparency-dataset:transparency ;
     void:triples 3335 ;
     .
 :transparency
-    rdf:type void:Dataset ;
+    a void:Dataset ;
+    void:sparqlEndpoint <http://transparency.270a.info/sparql> ;
     foaf:homepage <http://transparency.270a.info/> ;
     .
-:meta_bfs
+:linkset-oecd-bfs
     a void:Linkset ;
     void:linkPredicate skos:exactMatch ;
-    void:subjectsTarget :meta ;
-    void:objectsTarget :bfs ;
+    void:subjectsTarget oecd-dataset:oecd ;
+    void:objectsTarget bfs-dataset:bfs ;
     void:triples 3335 ;
     .
-:bfs
-    rdf:type void:Dataset ;
+bfs-dataset:bfs
+    a void:Dataset ;
+    void:sparqlEndpoint <http://bfs.270a.info/sparql> ;
     foaf:homepage <http://bfs.270a.info/> ;
     .
-:meta_dbpedia
+:linkset-oecd-fao
     a void:Linkset ;
     void:linkPredicate skos:exactMatch ;
-    void:subjectsTarget :meta ;
-    void:objectsTarget :dbpedia ;
+    void:subjectsTarget oecd-dataset:oecd ;
+    void:objectsTarget fao-dataset:fao ;
+    void:triples 3360 ;
+    .
+fao-dataset:fao
+    a void:Dataset ;
+    void:sparqlEndpoint <http://fao.270a.info/sparql> ;
+    foaf:homepage <http://fao.270a.info/> ;
+    .
+:linkset-oecd-ecb
+    a void:Linkset ;
+    void:linkPredicate skos:exactMatch ;
+    void:subjectsTarget oecd-dataset:oecd ;
+    void:objectsTarget ecb-dataset:ecb ;
+    void:triples 3495 ;
+    .
+ecb-dataset:ecb
+    a void:Dataset ;
+    void:sparqlEndpoint <http://ecb.270a.info/sparql> ;
+    foaf:homepage <http://ecb.270a.info/> ;
+    .
+:linkset-oecd-dbpedia
+    a void:Linkset ;
+    void:linkPredicate skos:exactMatch ;
+    void:subjectsTarget oecd-dataset:oecd ;
+    void:objectsTarget <http://dbpedia.org/void/Dataset> ;
     void:triples 3391 ;
     .
-:dbpedia
+<http://dbpedia.org/void/Dataset>
     rdf:type void:Dataset ;
+    void:sparqlEndpoint <http://dbpedia.org/sparql> ;
     foaf:homepage <http://dbpedia.org/> ;
     .
 

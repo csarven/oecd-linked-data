@@ -1,0 +1,127 @@
+<http://oecd.270a.info/dataset/7HA> <http://purl.org/dc/terms/title> "Households' financial and non-financial assets and liabilities"@en .
+<http://oecd.270a.info/dataset/7IA> <http://purl.org/dc/terms/title> "Institutional investors' assets"@en .
+<http://oecd.270a.info/dataset/AFA_CALC_IN3> <http://purl.org/dc/terms/title> "Inward activity of multinationals - Share in national total (manufacturing)"@en .
+<http://oecd.270a.info/dataset/AFA_CALC_OUT3> <http://purl.org/dc/terms/title> "Outward activity of multinationals - Share in national total (manufacturing)"@en .
+<http://oecd.270a.info/dataset/AFA_IN3> <http://purl.org/dc/terms/title> "Inward activity of multinationals by industrial sector (manufacturing) - ISIC Rev 3 copy"@en .
+<http://oecd.270a.info/dataset/AFA_IN3_MANUF> <http://purl.org/dc/terms/title> "Inward activity of multinationals by investing country, total manufacturing - ISIC Rev 3"@en .
+<http://oecd.270a.info/dataset/AFA_OUT3> <http://purl.org/dc/terms/title> "Outward activity of multinationals by industrial sector (manufacturing) - ISIC Rev 3"@en .
+<http://oecd.270a.info/dataset/AFA_OUT3_PARTNER> <http://purl.org/dc/terms/title> "Outward activity of multinationals by country of location, total manufacturing - ISIC Rev 3"@en .
+<http://oecd.270a.info/dataset/AIR_EMISSIONS> <http://purl.org/dc/terms/title> "Emissions of air pollutants (thousand tonnes)"@en .
+<http://oecd.270a.info/dataset/AIR_GHG> <http://purl.org/dc/terms/title> "Greenhouse gas emissions (thousand tonnes CO2 eq)"@en .
+<http://oecd.270a.info/dataset/AMNE_IN> <http://purl.org/dc/terms/title> "Inward activity of multinationals by industrial sector - ISIC Rev 4"@en .
+<http://oecd.270a.info/dataset/AMNE_IN_PARTNER> <http://purl.org/dc/terms/title> "Inward activity of multinationals by investing country - ISIC Rev 4"@en .
+<http://oecd.270a.info/dataset/AMNE_OUT> <http://purl.org/dc/terms/title> "Outward activity of multinationals by industrial sector - ISIC Rev 4"@en .
+<http://oecd.270a.info/dataset/AMNE_OUT_PARTNER> <http://purl.org/dc/terms/title> "Outward activity of multinationals by country of location - ISIC Rev 4"@en .
+<http://oecd.270a.info/dataset/ANBERD2011_REV3> <http://purl.org/dc/terms/title> "STAN R&D Expenditure in Industry"@en .
+<http://oecd.270a.info/dataset/AV_AN_WAGE> <http://purl.org/dc/terms/title> "Average annual wages"@en .
+<http://oecd.270a.info/dataset/BPF1> <http://purl.org/dc/terms/title> "Income Statement and Balance Sheet (New)"@en .
+<http://oecd.270a.info/dataset/CONTAINERS_TRANSPORT> <http://purl.org/dc/terms/title> "Containers transport"@en .
+<http://oecd.270a.info/dataset/CPA> <http://purl.org/dc/terms/title> "CPA"@en .
+<http://oecd.270a.info/dataset/CPL> <http://purl.org/dc/terms/title> "Monthly comparative price levels"@en .
+<http://oecd.270a.info/dataset/CRISIS> <http://purl.org/dc/terms/title> "SPECIAL FOCUS"@en .
+<http://oecd.270a.info/dataset/CSP2009> <http://purl.org/dc/terms/title> "Country statistical profiles 2009"@en .
+<http://oecd.270a.info/dataset/CSP2010> <http://purl.org/dc/terms/title> "Country statistical profiles 2010"@en .
+<http://oecd.270a.info/dataset/CSP2011> <http://purl.org/dc/terms/title> "Country statistical profiles - 2011 edition"@en .
+<http://oecd.270a.info/dataset/CSP2012> <http://purl.org/dc/terms/title> "FACTBOOK_2013"@en .
+<http://oecd.270a.info/dataset/CSPCUBE> <http://purl.org/dc/terms/title> "Country statistical profiles"@en .
+<http://oecd.270a.info/dataset/CWB> <http://purl.org/dc/terms/title> "Child Well-Being"@en .
+<http://oecd.270a.info/dataset/DACDEFL> <http://purl.org/dc/terms/title> "Deflators (Geo Book)"@en .
+<http://oecd.270a.info/dataset/DACGEO> <http://purl.org/dc/terms/title> "Geographical flows to developing countries (Geo Book)"@en .
+<http://oecd.270a.info/dataset/DACIND> <http://purl.org/dc/terms/title> "Indicators (Geo Book)"@en .
+<http://oecd.270a.info/dataset/DACSECTOR> <http://purl.org/dc/terms/title> "ODA by sector \u2013 bilateral commitments by donor and recipient (Geo Book)"@en .
+<http://oecd.270a.info/dataset/DEC_I> <http://purl.org/dc/terms/title> "Decile ratios of gross earnings"@en .
+<http://oecd.270a.info/dataset/EAR_MEI> <http://purl.org/dc/terms/title> "Hourly Earnings (MEI)"@en .
+<http://oecd.270a.info/dataset/ECON> <http://purl.org/dc/terms/title> "Economic Indicators for MSTI"@en .
+<http://oecd.270a.info/dataset/ECONOMICS_TL2> <http://purl.org/dc/terms/title> "ECONOMICS TL2"@en .
+<http://oecd.270a.info/dataset/ECONOMICS_TL3> <http://purl.org/dc/terms/title> "ECONOMICS TL3"@en .
+<http://oecd.270a.info/dataset/EPL_CD> <http://purl.org/dc/terms/title> "Strictness of employment protection - collective dismissals"@en .
+<http://oecd.270a.info/dataset/EPL_OV> <http://purl.org/dc/terms/title> "Strictness of employment protection \u2013 overall"@en .
+<http://oecd.270a.info/dataset/EPL_R> <http://purl.org/dc/terms/title> "Strictness of employment protection \u2013 regular employment"@en .
+<http://oecd.270a.info/dataset/EPL_T> <http://purl.org/dc/terms/title> "Strictness of employment protection \u2013 temporary employment"@en .
+<http://oecd.270a.info/dataset/FATS_IN3_SERV> <http://purl.org/dc/terms/title> "Inward activity of Multinationals in  ISIC Rev 3 (services)"@en .
+<http://oecd.270a.info/dataset/FATS_OUT3_SERV> <http://purl.org/dc/terms/title> "Outward Activity of Multinationals in ISIC Rev 3 (services)"@en .
+<http://oecd.270a.info/dataset/FDI_BOP_IIP> <http://purl.org/dc/terms/title> "FDI series of BOP and IIP aggregates"@en .
+<http://oecd.270a.info/dataset/FDI_FLOW_INDUSTRY> <http://purl.org/dc/terms/title> "FDI flows by industry"@en .
+<http://oecd.270a.info/dataset/FDI_FLOW_PARTNER> <http://purl.org/dc/terms/title> "FDI flows by partner country"@en .
+<http://oecd.270a.info/dataset/FDI_POSITION_INDUSTRY> <http://purl.org/dc/terms/title> "FDI positions by industry"@en .
+<http://oecd.270a.info/dataset/FDI_POSITION_PARTNER> <http://purl.org/dc/terms/title> "FDI positions by partner country"@en .
+<http://oecd.270a.info/dataset/FIN_IND_FA> <http://purl.org/dc/terms/title> "Financial Indicators - Flows"@en .
+<http://oecd.270a.info/dataset/FOREST> <http://purl.org/dc/terms/title> "Depletion and growth of forest resources in terms of volume (thousand m3)"@en .
+<http://oecd.270a.info/dataset/FSS> <http://purl.org/dc/terms/title> "Survey on Donors Forward Spending Plans"@en .
+<http://oecd.270a.info/dataset/GREEN_GROWTH> <http://purl.org/dc/terms/title> "INDICATOR SAMPLES"@en .
+<http://oecd.270a.info/dataset/GROWTH> <http://purl.org/dc/terms/title> "Going for Growth 2010"@en .
+<http://oecd.270a.info/dataset/HCQI_STAND> <http://purl.org/dc/terms/title> "Health Care Quality Indicators"@en .
+<http://oecd.270a.info/dataset/HEALTH_DEMR> <http://purl.org/dc/terms/title> "Demographic References"@en .
+<http://oecd.270a.info/dataset/HEALTH_ECOR> <http://purl.org/dc/terms/title> "Economic References"@en .
+<http://oecd.270a.info/dataset/HEALTH_LVNG> <http://purl.org/dc/terms/title> "Non-Medical Determinants of Health"@en .
+<http://oecd.270a.info/dataset/HEALTH_PROC> <http://purl.org/dc/terms/title> "Health Care Utilisation"@en .
+<http://oecd.270a.info/dataset/HEALTH_REAC> <http://purl.org/dc/terms/title> "Health Care Resources"@en .
+<http://oecd.270a.info/dataset/HEALTH_STAT> <http://purl.org/dc/terms/title> "Health Status"@en .
+<http://oecd.270a.info/dataset/> <http://purl.org/dc/terms/title> "Harmonised System 1988"@en .
+<http://oecd.270a.info/dataset/ICTGRP> <http://purl.org/dc/terms/title> "ICT Goods"@en .
+<http://oecd.270a.info/dataset/INLAND_FREIGHT_TRANSPORT> <http://purl.org/dc/terms/title> "Inland freight transport"@en .
+<http://oecd.270a.info/dataset/INLAND_PASSENGER_TRANSPORT> <http://purl.org/dc/terms/title> "Inland passenger transport"@en .
+<http://oecd.270a.info/dataset/ITCS_EXCH> <http://purl.org/dc/terms/title> "ITCS Exchange rates"@en .
+<http://oecd.270a.info/dataset/KEI> <http://purl.org/dc/terms/title> "Key Short-Term Economic Indicators"@en .
+<http://oecd.270a.info/dataset/MEI_CPI_WEIGHTS> <http://purl.org/dc/terms/title> "National CPI weights"@en .
+<http://oecd.270a.info/dataset/MFP> <http://purl.org/dc/terms/title> "Multi-factor Productivity"@en .
+<http://oecd.270a.info/dataset/MIG> <http://purl.org/dc/terms/title> "International Migration Database"@en .
+<http://oecd.270a.info/dataset/MIN2AVE> <http://purl.org/dc/terms/title> "Minimum relative to average wages of full-time workers"@en .
+<http://oecd.270a.info/dataset/MSTI_PUB> <http://purl.org/dc/terms/title> "Main Science and Technology Indicators"@en .
+<http://oecd.270a.info/dataset/MW_CURP> <http://purl.org/dc/terms/title> "Minimum wages at current prices in NCU"@en .
+<http://oecd.270a.info/dataset/NATIONAL_SEA_TRANSPORT> <http://purl.org/dc/terms/title> "National sea transport"@en .
+<http://oecd.270a.info/dataset/PNN_NEW> <http://purl.org/dc/terms/title> "GPS PGI_CrossBorder"@en .
+<http://oecd.270a.info/dataset/POP_FIVE_HIST> <http://purl.org/dc/terms/title> "Population"@en .
+<http://oecd.270a.info/dataset/PPP2005> <http://purl.org/dc/terms/title> "2005 PPP Benchmark results"@en .
+<http://oecd.270a.info/dataset/PPPGDP> <http://purl.org/dc/terms/title> "Purchasing Power Parities for GDP and related indicators"@en .
+<http://oecd.270a.info/dataset/PT2> <http://purl.org/dc/terms/title> "Business written in the reporting country"@en .
+<http://oecd.270a.info/dataset/PT3> <http://purl.org/dc/terms/title> "Insurance business by domestic and foreign risks"@en .
+<http://oecd.270a.info/dataset/PT4> <http://purl.org/dc/terms/title> "Insurance business written abroad by branches"@en .
+<http://oecd.270a.info/dataset/PT7> <http://purl.org/dc/terms/title> "Gross claims payments"@en .
+<http://oecd.270a.info/dataset/PT8> <http://purl.org/dc/terms/title> "Gross operating expenses"@en .
+<http://oecd.270a.info/dataset/PT9> <http://purl.org/dc/terms/title> "Commissions in the reporting country"@en .
+<http://oecd.270a.info/dataset/QASA_TABLE7PSD> <http://purl.org/dc/terms/title> "Public Sector Debt, consolidated, nominal value"@en .
+<http://oecd.270a.info/dataset/REF_TOTAL_ODF> <http://purl.org/dc/terms/title> "DACref_Reference Total ODF"@en .
+<http://oecd.270a.info/dataset/REF_TOTALOFFICIAL> <http://purl.org/dc/terms/title> "DACref_Reference Total Official Flows"@en .
+<http://oecd.270a.info/dataset/REF_TOTALRECPTS> <http://purl.org/dc/terms/title> "DACref_Reference Total Receipts"@en .
+<http://oecd.270a.info/dataset/REG_DEMO_TL2> <http://purl.org/dc/terms/title> "Demographic Statistics"@en .
+<http://oecd.270a.info/dataset/REG_DEMO_TL3> <http://purl.org/dc/terms/title> "Demographic Statistics"@en .
+<http://oecd.270a.info/dataset/REG_INNO_TL2> <http://purl.org/dc/terms/title> "Innovation Indicators"@en .
+<http://oecd.270a.info/dataset/REG_INNO_TL3> <http://purl.org/dc/terms/title> "Innovation Indicators"@en .
+<http://oecd.270a.info/dataset/REG_LAB_TL2> <http://purl.org/dc/terms/title> "Regional Labour Market"@en .
+<http://oecd.270a.info/dataset/REG_LAB_TL3> <http://purl.org/dc/terms/title> "Regional Labour Market"@en .
+<http://oecd.270a.info/dataset/REG_SOC_TL2> <http://purl.org/dc/terms/title> "Social Indicators TL2"@en .
+<http://oecd.270a.info/dataset/RFIN2> <http://purl.org/dc/terms/title> "Expenditure by nature and resource category"@en .
+<http://oecd.270a.info/dataset/RGRADSTY> <http://purl.org/dc/terms/title> "Graduates by field of education"@en .
+<http://oecd.270a.info/dataset/RHMW> <http://purl.org/dc/terms/title> "Real hourly minimum wages"@en .
+<http://oecd.270a.info/dataset/RIOMARKERS> <http://purl.org/dc/terms/title> "Aid activities targeting Global Environmental Objectives"@en .
+<http://oecd.270a.info/dataset/RNENTAGE> <http://purl.org/dc/terms/title> "New entrants by sex and age"@en .
+<http://oecd.270a.info/dataset/ROAD_INJURY_ACCIDENTS> <http://purl.org/dc/terms/title> "Road injury accidents"@en .
+<http://oecd.270a.info/dataset/ROVERAGE> <http://purl.org/dc/terms/title> "Students aligned to finance and personnel data"@en .
+<http://oecd.270a.info/dataset/RPOP> <http://purl.org/dc/terms/title> "Total population by sex and age"@en .
+<http://oecd.270a.info/dataset/SNA_TABLE4> <http://purl.org/dc/terms/title> "4. PPPs and exchange rates"@en .
+<http://oecd.270a.info/dataset/SNA_TABLE610> <http://purl.org/dc/terms/title> "610. Financial accounts - consolidated"@en .
+<http://oecd.270a.info/dataset/SNA_TABLE620> <http://purl.org/dc/terms/title> "620. Financial accounts - non consolidated"@en .
+<http://oecd.270a.info/dataset/SNA_TABLE710> <http://purl.org/dc/terms/title> "710. Financial balance sheets - consolidated"@en .
+<http://oecd.270a.info/dataset/SNA_TABLE720> <http://purl.org/dc/terms/title> "720. Financial balance sheets - non consolidated"@en .
+<http://oecd.270a.info/dataset/SOCX_REF> <http://purl.org/dc/terms/title> "Social Expenditure - Reference Series"@en .
+<http://oecd.270a.info/dataset/STAN08BIS> <http://purl.org/dc/terms/title> "STAN Database for Structural Analysis (ISIC Rev. 3)"@en .
+<http://oecd.270a.info/dataset/STANI4> <http://purl.org/dc/terms/title> "STAN Database for Structural Analysis (ISIC Rev. 4)"@en .
+<http://oecd.270a.info/dataset/SURVEYDATA> <http://purl.org/dc/terms/title> "Survey on Monitoring the Paris Declaration"@en .
+<http://oecd.270a.info/dataset/TABLE1> <http://purl.org/dc/terms/title> "Total flows by donor (ODA+OOF+Private) [DAC1]"@en .
+<http://oecd.270a.info/dataset/TABLE2A> <http://purl.org/dc/terms/title> "Aid (ODA) disbursements to countries and regions [DAC2a]"@en .
+<http://oecd.270a.info/dataset/TABLE2B> <http://purl.org/dc/terms/title> "Other official flows (OOF)-disbursements [DAC2b]"@en .
+<http://oecd.270a.info/dataset/TABLE3A> <http://purl.org/dc/terms/title> "Aid (ODA) commitments to countries and regions [DAC3a]"@en .
+<http://oecd.270a.info/dataset/TABLE4> <http://purl.org/dc/terms/title> "Private flows [DAC4]"@en .
+<http://oecd.270a.info/dataset/TABLE5> <http://purl.org/dc/terms/title> "Aid (ODA) by sector and donor [DAC5]"@en .
+<http://oecd.270a.info/dataset/TABLE7B> <http://purl.org/dc/terms/title> "DAC7b Tying Status of Bilateral ODA"@en .
+<http://oecd.270a.info/dataset/TALIS> <http://purl.org/dc/terms/title> "Teaching and Learning International Survey (TALIS)"@en .
+<http://oecd.270a.info/dataset/TIGS_IO> <http://purl.org/dc/terms/title> "Imports of intermediate goods and services"@en .
+<http://oecd.270a.info/dataset/TIMELY_BDS_ISIC3_COPY> <http://purl.org/dc/terms/title> "Timely Indicators of Entrepreneurship (ISIC3) - Copy"@en .
+<http://oecd.270a.info/dataset/TIMELY_BDS_ISIC4> <http://purl.org/dc/terms/title> "Timely Indicators of Entrepreneurship (ISIC4)"@en .
+<http://oecd.270a.info/dataset/U_D_D> <http://purl.org/dc/terms/title> "Union members and employees"@en .
+<http://oecd.270a.info/dataset/ULC_EEQ> <http://purl.org/dc/terms/title> "Early Estimates of Quarterly ULC Indicators \u2013 Total economy"@en .
+<http://oecd.270a.info/dataset/UN_DEN> <http://purl.org/dc/terms/title> "Trade union density"@en .
+<http://oecd.270a.info/dataset/WASTE> <http://purl.org/dc/terms/title> "Municipal Waste (thousand tonnes)"@en .
+<http://oecd.270a.info/dataset/WATER_ABSTRACT> <http://purl.org/dc/terms/title> "Freshwater abstractions (million m3)"@en .
+<http://oecd.270a.info/dataset/WATER_TREAT> <http://purl.org/dc/terms/title> "Wastewater treatment (% population connected)" .

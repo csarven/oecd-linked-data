@@ -13,7 +13,7 @@ mkdir -p "$data"import
 #rm "$data"import/*stats*
 
 echo "Creating LODStats for Datasets"
-find "$data"import/*stats.ttl -name "*[!Structure|oecd.]" | while read i ; do lodstats -val "$i" > "$i".stats.ttl ; echo "Created $i.stats.ttl" ; done;
+find "$data"import/*.nt -name "*[!Structure|oecd.]" | while read i ; do lodstats -val "$i" > "$i".stats.ttl ; echo "Created $i.stats.ttl" ; done;
 
 echo Exporting "$namespace"graph/meta ;
 java "$JVM_ARGS" tdb.tdbquery --time --desc="$tdbAssembler" --results=n-triples 'CONSTRUCT { ?s ?p ?o } WHERE { GRAPH <'"$namespace"'graph/meta> { ?s ?p ?o } }' > "$data"import/meta.nt ;
