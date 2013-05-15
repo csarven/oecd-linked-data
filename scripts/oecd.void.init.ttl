@@ -41,7 +41,7 @@ oecd-dataset:oecd
     foaf:homepage <http://oecd.270a.info/> ;
     dcterms:source <http://oecd.org/> ;
     dcterms:publisher <http://csarven.ca/#i> ;
-    dcterms:modified "2013-02-10"^^xsd:date ;
+    dcterms:modified "2013-05-06"^^xsd:date ;
     dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
     void:subset
         oecd-dataset:void ,
@@ -63,7 +63,7 @@ oecd-dataset:oecd
 oecd-dataset:void
     a sd:Graph, void:Dataset ;
     dcterms:title "SD+VoID triples"@en ;
-    void:triples 23868 ;
+    void:triples 23618 ;
     void:dataDump <http://oecd.270a.info/void.ttl> ;
     .
 
@@ -205,7 +205,7 @@ WHERE {
             ?s a qb:DataSet .
             ?s qb:structure ?structure .
             OPTIONAL {
-                ?structure skos:prefLabel ?dataSetTitle .
+                ?structure dcterms:title ?dataSetTitle .
             }
             OPTIONAL {
                 ?structure sdmx-concept:dsi ?dataSetIdentifier .
