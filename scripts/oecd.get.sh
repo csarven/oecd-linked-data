@@ -59,11 +59,16 @@ while read i ;
                     <prov:used>
                         <rdf:Description rdf:about="http:\/\/stats.oecd.org\/restsdmx\/sdmx.ashx\/Get'$GD'\/$2">
                             <foaf:page rdf:resource="http:\/\/stats.oecd.org\/$4"\/>
-                            <dcterms:title>$5<\/dcterms:title>
                             <dcterms:identifier>'$DataSetCode'<\/dcterms:identifier>
+                            <dcterms:title>$5<\/dcterms:title>
                         <\/rdf:Description>
                     <\/prov:used>
-                    <prov:generated rdf:resource="http:\/\/oecd.270a.info\/data\/'$DataSetCode''$DataTypePath'.xml"\/>
+                    <prov:generated>
+                        <rdf:Description rdf:about="http:\/\/oecd.270a.info\/data\/'$DataSetCode''$DataTypePath'.xml">
+                            <dcterms:identifier>'$DatasetCode'</dcterms:identifier>
+                            <dcterms:title>$5<\/dcterms:title>
+                        </rdf:Description>
+                    </prov:generated>
                     <rdfs:label xml:lang="en">Retrieved '$DataSetCode' '$DataTypeLabel'<\/rdfs:label>
                     <rdfs:comment xml:lang="en">'$DataTypeLabel' of dataset '$DataSetCode' retrieved from source and saved to local filesystem.<\/rdfs:comment>
                 <\/rdf:Description>/' >> "$data""$agency".prov.retrieval.rdf ;
