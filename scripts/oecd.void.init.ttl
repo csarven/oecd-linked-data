@@ -16,6 +16,7 @@ prefix oecd-dataset: <http://oecd.270a.info/dataset/>
 prefix bfs-dataset: <http://bfs.270a.info/dataset/>
 prefix fao-dataset: <http://fao.270a.info/dataset/>
 prefix ecb-dataset: <http://ecb.270a.info/dataset/>
+prefix imf-dataset: <http://imf.270a.info/dataset/>
 prefix worldbank-dataset: <http://worldbank.270a.info/dataset/>
 prefix transparency-dataset: <http://transparency.270a.info/dataset/>
 
@@ -170,6 +171,18 @@ ecb-dataset:ecb
     a void:Dataset ;
     void:sparqlEndpoint <http://ecb.270a.info/sparql> ;
     foaf:homepage <http://ecb.270a.info/> ;
+    .
+:linkset-oecd-imf
+    a void:Linkset ;
+    void:linkPredicate skos:exactMatch ;
+    void:subjectsTarget oecd-dataset:oecd ;
+    void:objectsTarget imf-dataset:imf ;
+    void:triples 3495 ;
+    .
+imf-dataset:imf
+    a void:Dataset ;
+    void:sparqlEndpoint <http://imf.270a.info/sparql> ;
+    foaf:homepage <http://imf.270a.info/> ;
     .
 :linkset-oecd-dbpedia
     a void:Linkset ;
