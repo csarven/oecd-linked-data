@@ -64,7 +64,7 @@ oecd-dataset:oecd
 oecd-dataset:void
     a sd:Graph, void:Dataset ;
     dcterms:title "SD+VoID triples"@en ;
-    void:triples 23618 ;
+    void:triples 23626 ;
     void:dataDump <http://oecd.270a.info/void.ttl> ;
     .
 
