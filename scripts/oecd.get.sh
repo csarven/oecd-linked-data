@@ -25,7 +25,7 @@ Get=(Data DataStructure);
 counter=1;
 while read i ;
     do
-        DataSetCode=$(echo "$i" | perl -pe 's/<a(.*)(?=dscode)dscode=\"([^\"]*)\"(.*)(?=href)href=\"([^\"]*)\">([^<]*)<\/a>/$2/');
+        DataSetCode=$(echo "$i" | perl -pe 's/<a(.*)(?=dscode)dscode=\"([^\"]*)\"(.*)/$2/');
 
         for GD in "${Get[@]}" ;
             do
