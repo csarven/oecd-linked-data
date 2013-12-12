@@ -65,10 +65,10 @@ while read i ;
                     <\/prov:used>
                     <prov:generated>
                         <rdf:Description rdf:about="http:\/\/oecd.270a.info\/data\/'$DataSetCode''$DataTypePath'.xml">
-                            <dcterms:identifier>'$DatasetCode'</dcterms:identifier>
+                            <dcterms:identifier>'$DatasetCode'<\/dcterms:identifier>
                             <dcterms:title>$5<\/dcterms:title>
-                        </rdf:Description>
-                    </prov:generated>
+                        <\/rdf:Description>
+                    <\/prov:generated>
                     <rdfs:label xml:lang="en">Retrieved '$DataSetCode' '$DataTypeLabel'<\/rdfs:label>
                     <rdfs:comment xml:lang="en">'$DataTypeLabel' of dataset '$DataSetCode' retrieved from source and saved to local filesystem.<\/rdfs:comment>
                 <\/rdf:Description>/' >> "$data""$agency".prov.retrieval.rdf ;
