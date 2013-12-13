@@ -86,7 +86,7 @@ while read i ;
 
 echo -e "\n</rdf:RDF>" >> "$data""$agency".prov.retrieval.rdf ;
 
-mv "$data"oecd.temp /tmp/
+mv oecd.temp /tmp/
 
 #real    126m42.340s
 #user    0m6.816s
