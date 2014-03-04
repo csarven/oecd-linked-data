@@ -18,6 +18,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
     xmlns:foaf="http://xmlns.com/foaf/0.1/"
     xmlns:sdmx="http://purl.org/linked-data/sdmx#">' > "$data""$agency".prov.retrieval.rdf ;
 
+sed -i 's/\&ndash;/\&#8211;/g' oecd.html
 xmllint --xpath "/ul/li/ul/li/ul/li/a[@class = \"ds\"]" oecd.html | sed 's/\/a>/\/a>\n/gi' > oecd.temp
 
 Get=(Data DataStructure);
