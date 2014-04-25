@@ -10,10 +10,11 @@
 . ./oecd.config.sh
 
 mkdir -p "$data"import
-#rm "$data"import/*stats*
+rm "$data"import/*stats*
 
 echo "Creating LODStats for Datasets"
-find "$data"import/*.nt -name "*[!Structure|oecd.]" | while read i ; do lodstats -val "$i" > "$i".stats.ttl ; echo "Created $i.stats.ttl" ; done;
+#NO GOOD find "$data"import/*.nt -name "*[!Structure|oecd.]" | while read i ; do lodstats -val "$i" > "$i".stats.ttl ; echo "Created $i.stats.ttl" ; done;
+ls -1S "$data"import/*.nt | grep -vE "Structure.nt" | grep -vE "/import/oecd.*nt" | while read i ; do echo "lodstats $i"; lodstats -val "$i" > "$i".stats.ttl ; echo "Created $i.stats.ttl" ; done;
 
 echo Exporting "$namespace"graph/meta ;
 java "$JVM_ARGS" tdb.tdbquery --time --desc="$tdbAssembler" --results=n-triples 'CONSTRUCT { ?s ?p ?o } WHERE { GRAPH <'"$namespace"'graph/meta> { ?s ?p ?o } }' > "$data"import/meta.nt ;

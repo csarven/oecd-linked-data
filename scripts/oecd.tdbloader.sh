@@ -19,8 +19,12 @@ rm -rf "$db";
 #RDF/XML
 #ls -1S "$data"*.rdf | grep -vE "(Structure|prov).rdf" | while read i ; do file=$(basename "$i"); dataSetCode=${file%.*}; java "$JVM_ARGS" tdb.tdbloader --desc="$tdbAssembler" --graph="$namespace"graph/"$dataSetCode" "$i"; done ;
 
-ls -1S "$data"import/*.nt | grep -vE "(Structure|oecd).nt" | while read i ; do file=$(basename "$i"); dataSetCode=${file%.*}; java "$JVM_ARGS" tdb.tdbloader --desc="$tdbAssembler" --graph="$namespace"graph/"$dataSetCode" "$i"; done ;
+ls -1S "$data"import/*.nt | grep -vE "Structure.nt" | grep -vE "/import/oecd.*nt" | while read i ; do file=$(basename "$i"); dataSetCode=${file%.*}; java "$JVM_ARGS" tdb.tdbloader --desc="$tdbAssembler" --graph="$namespace"graph/"$dataSetCode" "$i"; done ;
 
+
+rm "$data""$agency".observations.meta.nt
+ls -1S "$data"import/*.nt | grep -Ev "Structure.nt" | grep -vE "/import/oecd.*nt" | while read i ; do file=$(basename "$i"); DataSetCode=${file%.*}; echo "<$namespace""dataset/$DataSetCode> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <$namespace""data/$agency.observations.ttl> ." >> "$data""$agency".observations.meta.nt ; done
+java "$JVM_ARGS" tdb.tdbloader --desc="$tdbAssembler" --graph="$namespace"graph/meta "$data""$agency".observations.meta.nt
 
 for i in "$data"import/*.Structure.nt ; do java "$JVM_ARGS" tdb.tdbloader --desc="$tdbAssembler" --graph="$namespace"graph/meta "$i" ; done
 java "$JVM_ARGS" tdb.tdbloader --desc="$tdbAssembler" --graph="$namespace"graph/meta "$data""$agency".prov.archive.nt

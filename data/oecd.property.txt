@@ -1,0 +1,59 @@
+refArea
+
+http://oecd.270a.info/property/CO2
+http://oecd.270a.info/property/COU
+http://oecd.270a.info/property/COUNTRY
+http://oecd.270a.info/property/DONOR
+http://oecd.270a.info/property/LOCATION
+http://oecd.270a.info/property/PAR
+http://oecd.270a.info/property/REG_TL2
+http://oecd.270a.info/property/REG_TL3
+http://oecd.270a.info/property/REPORTER
+
+TODO: These are held back for now from being a rdfs:subPropertyOf because it causes the observation to have two refAreas (one from above and below). Although this is not the best way of handling this situation, for now it is okay until a better solution is developed - Lets see
+http://oecd.270a.info/property/PART
+http://oecd.270a.info/property/PARTNER
+http://oecd.270a.info/property/RECIPIENT
+
+#saxonb-xslt -t -tree:linked -s /data/oecd-linked-data/data.staging/7HA.xml -xsl /home/sarcap/linked-sdmx/scripts/generic.xsl xmlDocument=/data/oecd-linked-data/data.staging/7HA.xml pathToConfig=config.oecd.rdf pathToGenericStructure=/data/oecd-linked-data/data.staging/7HA.Structure.xml pathToProvDocument=/data/oecd-linked-data/data.staging/oecd.prov.retrieval.rdf > /data/oecd-linked-data/data.staging/7HA.rdf
+
+
+I don't remember why I wrote these here:
+http://oecd.270a.info/property/DISBYR
+http://oecd.270a.info/property/DEFL_BASE
+
+refPeriod
+http://oecd.270a.info/property/TIME
+
+These are more like timePeriod (as opposed to refPeriod - as it is currently)
+http://oecd.270a.info/property/YEAR
+http://oecd.270a.info/property/YEA
+
+
+sed -r 's/(.*)/<\1> <http:\/\/www.w3.org\/2000\/01\/rdf-schema#subPropertyOf> <http:\/\/purl.org\/linked-data\/sdmx\/2009\/dimension#refArea> \./g' oecd.property.refArea.txt >> oecd.property.meta.nt
+
+sed -r 's/(.*)/<\1> <http:\/\/www.w3.org\/2000\/01\/rdf-schema#subPropertyOf> <http:\/\/purl.org\/linked-data\/sdmx\/2009\/dimension#refPeriod> \./g' oecd.property.refPeriod.txt >> oecd.property.meta.nt
+
+
+TODO:
+Needs to be a URI
+http://oecd.270a.info/property/DEFL_BASE
+http://oecd.270a.info/property/DISBYR
+
+
+
+
+http://oecd.270a.info/property/FREQUENCY
+
+
+http://oecd.270a.info/property/MEASURE
+
+http://oecd.270a.info/property/MEASURETYPE
+
+http://oecd.270a.info/property/CUR
+
+http://oecd.270a.info/property/SEX
+
+
+
+

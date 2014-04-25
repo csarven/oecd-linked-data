@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:sdmx="http://purl.org/linked-data/sdmx#">
+
+                <rdf:Description rdf:about="http://oecd.270a.info/provenance/activity/20140303234249">
+                    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+                    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-03-03T23:42:49Z</prov:startedAtTime>
+                    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-03-03T23:43:32Z</prov:endedAtTime>
+                    <prov:wasAssociatedWith rdf:resource="http://csarven.ca/#i"/>
+                    <prov:used rdf:resource="https://launchpad.net/ubuntu/+source/wget"/>
+                    <prov:used>
+                        <rdf:Description rdf:about="http://stats.oecd.org/restsdmx/sdmx.ashx/GetData/CSPCUBE">
+                            <foaf:page rdf:resource="http://stats.oecd.org/Index.aspx?DataSetCode=CSPCUBE"/>
+                            <dcterms:identifier>CSPCUBE</dcterms:identifier>
+                            <dcterms:title>Country statistical profiles</dcterms:title>
+                        </rdf:Description>
+                    </prov:used>
+                    <prov:generated>
+                        <rdf:Description rdf:about="http://oecd.270a.info/data/CSPCUBE.xml">
+                            <dcterms:identifier></dcterms:identifier>
+                            <dcterms:title>Country statistical profiles</dcterms:title>
+                        </rdf:Description>
+                    </prov:generated>
+                    <rdfs:label xml:lang="en">Retrieved CSPCUBE Data</rdfs:label>
+                    <rdfs:comment xml:lang="en">Data of dataset CSPCUBE retrieved from source and saved to local filesystem.</rdfs:comment>
+                </rdf:Description>
+
+                <rdf:Description rdf:about="http://oecd.270a.info/dataset/CSPCUBE">
+                    <dcterms:title>Country statistical profiles</dcterms:title>
+                </rdf:Description>
+
+                <rdf:Description rdf:about="http://oecd.270a.info/provenance/activity/20140303234332">
+                    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+                    <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-03-03T23:43:32Z</prov:startedAtTime>
+                    <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-03-03T23:43:34Z</prov:endedAtTime>
+                    <prov:wasAssociatedWith rdf:resource="http://csarven.ca/#i"/>
+                    <prov:used rdf:resource="https://launchpad.net/ubuntu/+source/wget"/>
+                    <prov:used>
+                        <rdf:Description rdf:about="http://stats.oecd.org/restsdmx/sdmx.ashx/GetDataStructure/CSPCUBE">
+                            <foaf:page rdf:resource="http://stats.oecd.org/Index.aspx?DataSetCode=CSPCUBE"/>
+                            <dcterms:identifier>CSPCUBE</dcterms:identifier>
+                            <dcterms:title>Country statistical profiles</dcterms:title>
+                        </rdf:Description>
+                    </prov:used>
+                    <prov:generated>
+                        <rdf:Description rdf:about="http://oecd.270a.info/data/CSPCUBE.Structure.xml">
+                            <dcterms:identifier></dcterms:identifier>
+                            <dcterms:title>Country statistical profiles</dcterms:title>
+                        </rdf:Description>
+                    </prov:generated>
+                    <rdfs:label xml:lang="en">Retrieved CSPCUBE Structure</rdfs:label>
+                    <rdfs:comment xml:lang="en">Structure of dataset CSPCUBE retrieved from source and saved to local filesystem.</rdfs:comment>
+                </rdf:Description>
