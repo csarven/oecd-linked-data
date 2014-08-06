@@ -274,13 +274,6 @@ frb-dataset:frb
     foaf:homepage <http://eurostat.linked-statistics.org/> ;
     .
 #TODO: What's the real VoID URL?
-<http://data.nasa.gov/>
-    rdf:type void:Dataset ;
-    dcterms:title "NASA"@en ;
-    #TODO: What's the count?
-    foaf:homepage <http://data.nasa.gov/> ;
-    .
-#TODO: What's the real VoID URL?
 <http://purl.org/collections/iati/void.ttl#IATI>
     rdf:type void:Dataset ;
     dcterms:title "International Aid Transparency Initiative"@en ;
